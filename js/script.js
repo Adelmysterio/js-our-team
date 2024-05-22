@@ -40,7 +40,8 @@ const team = [
 const outputElement = document.querySelector('#output')
 
 for (i = 0; i < team.length; i++) {
-    /*  console.log('Member '+ (i+1)); */
+    console.log('Member ' + (i + 1));
+
     const articleElement = document.createElement('article')
     const h2Element = document.createElement('h2')
     const pElement = document.createElement('p');
@@ -53,9 +54,9 @@ for (i = 0; i < team.length; i++) {
     pElement.append(team[i].role);
     imgElement.src = "img/" + team[i].pic;
 
-    /*   for (let key in team[i]){
-          console.log(key, (team[i])[key]);
-          pElement.append((team[i])[key]);
-      }; */
+    for (let key in team[i]) {
+        console.log(key, (team[i])[key]);
+        /*          pElement.append((team[i])[key]); */
+    };
 };
 
