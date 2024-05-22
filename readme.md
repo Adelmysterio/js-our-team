@@ -17,9 +17,13 @@ Creare l’array di oggetti con le informazioni fornite.
 
 MILESTONE 1:
 creo un ciclo for che scorra tutte le informazione dei singoli elementi del array e le stampi in console
+     creo un ciclo for in che scorre le informazioni all'interno dell'oggetto
 
 MILESTONE 2:
 dichiaro outputElement e seleziono la section classe output con un queryselector  
 all'interno dello stesso ciclo for 
     creo un elemento p 
-    appendo gli oggetti come contenuto del p
+    appendo la p ad output
+    all'interno del ciclo for in
+       appendo gli oggetti come contenuto del p
+

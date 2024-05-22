@@ -36,9 +36,15 @@ const team = [
     },
 ];
 
+const outputElement = document.querySelector('#output')
+
 for (i = 0; i < team.length; i++) {
-    console.log('Member '+ (i+1))
+    console.log('Member '+ (i+1));
+    const pElement = document.createElement('p');
+    outputElement.appendChild(pElement);
     for (let key in team[i]){
-        console.log(key, (team[i])[key])
-    }
-}
+        console.log(key, (team[i])[key]);
+        pElement.append((team[i])[key]);
+    };
+};
+
